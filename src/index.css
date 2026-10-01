@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Source Sans 3", "Segoe UI", sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+  --color-ink: #14241c;
+  --color-pine: #1d3b2e;
+  --color-moss: #3f6b54;
+  --color-cream: #f3efe6;
+  --color-paper: #fbf9f4;
+  --color-copper: #c56a32;
+  --color-line: #e5ddd1;
+  --color-danger: #8d2f2f;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-copper);
+  outline-offset: 2px;
+}
+
+dialog {
+  margin: auto;
+  color: inherit;
+}
+
+dialog::backdrop {
+  background: rgb(20 36 28 / 0.45);
+}
